@@ -11,3 +11,7 @@ __pycache__/
 # database and .env files
 *.sqlite3
 *.env
+
+# images
+media/
+
