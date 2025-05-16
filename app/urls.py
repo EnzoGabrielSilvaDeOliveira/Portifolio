@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from projetos.views import teste_view
+from projetos.views import HomePageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('teste/', teste_view, name='teste_view')
+    path('home/', HomePageView.as_view(), name='home')
 ]

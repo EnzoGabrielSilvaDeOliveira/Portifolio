@@ -1,7 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
+
 
 # Create your views here.
 
-def teste_view(request):
-    return render(request, 'teste.html')
+class HomePageView(TemplateView):
+    template_name = 'home.html'
+    extra_context = {
+        'title': 'Home',
+        'description': 'Welcome to the home page of our Django application!'
+    }
 
